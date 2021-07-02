@@ -1,0 +1,270 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: cornsilk;
+
+        }
+
+        .main-div {
+            border-radius: 5px;
+            margin: 50px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(24, 18, 18, 0.5);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .second-div {
+            padding: 10px;
+        }
+
+        button {
+            border: none;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .third-div {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        button {
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .first-div:hover img {
+            transform: scale(1.5);
+            transition: all 1s;
+        }
+
+        .first-div {
+            overflow: hidden;
+        }
+
+
+        li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @media screen and (min-width:1200px) {
+            .header {
+                background-color: black;
+            }
+
+            ul li {
+                display: inline-block;
+                padding: 20px;
+            }
+
+        }
+
+        @media screen and (max-width:1199px) {
+            .header {
+                background-color: black;
+            }
+
+            ul li {
+                display: block;
+                padding: 20px;
+            }
+
+        }
+
+        li img {
+            width: 50px;
+        }
+
+        li a:hover {
+            color: chocolate
+        }
+
+        li,
+        li input {
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        li {
+            color: white;
+        }
+
+        #search {
+            margin-left: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+
+        <ul>
+            <li style="color:white;font-size:25px">LOGO</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><input type="search" value="Search...">
+                <button>Search</button>
+            </li>
+        </ul>
+    </div>
+    <!-- <div class="main">
+        <div class="main-div">
+            <div class="first-div">
+                <img src="images/phone.png">
+            </div>
+            <div class="second-div">
+                <h4>Bsc (Hons) Computing</h4>
+                <p>The uptake of digital technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button>Explore</button>
+            </div>
+        </div>
+        <div class="main-div">
+            <div class="first-div">
+                <img src="images/assets/KATHMANDU.jpg">
+            </div>
+            <div class="second-div">
+                <h4>Bsc (Hons) Computing</h4>
+                <p>The uptake of digital technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button>Explore</button>
+            </div>
+        </div>
+        <div class="main-div">
+            <div class="first-div">
+                <img src="images/assets/KATHMANDU.jpg">
+            </div>
+            <div class="second-div">
+                <h4>Bsc (Hons) Computing</h4>
+                <p>The uptake of digital technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button>Explore</button>
+            </div>
+        </div>
+        <div class="main-div">
+            <div class="first-div">
+                <img src="images/assets/KATHMANDU.jpg">
+            </div>
+            <div class="second-div">
+                <h4>Bsc (Hons) Computing</h4>
+                <p>The uptake of digital technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button>Explore</button>
+            </div>
+        </div>
+        <div class="main-div">
+            <div class="first-div">
+                <img src="images/assets/KATHMANDU.jpg">
+            </div>
+            <div class="second-div">
+                <h4>Bsc (Hons) Computing</h4>
+                <p>The uptake of digital technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button>Explore</button>
+            </div>
+        </div>
+        <div class="main-div">
+            <div class="first-div">
+                <img src="images/assets/KATHMANDU.jpg">
+            </div>
+            <div class="second-div">
+                <h4>Bsc (Hons) Computing</h4>
+                <p>The uptake of digital technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button>Explore</button>
+            </div>
+        </div>
+        <div class="main-div">
+            <div class="first-div">
+                <img src="images/assets/KATHMANDU.jpg">
+            </div>
+            <div class="second-div">
+                <h4>Bsc (Hons) Computing</h4>
+                <p>The uptake of digital technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button>Explore</button>
+            </div>
+        </div>
+        <div class="main-div">
+            <div class="first-div">
+                <img src="images/assets/KATHMANDU.jpg">
+            </div>
+            <div class="second-div">
+                <h4>Bsc (Hons) Computing</h4>
+                <p>The uptake of digital technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button>Explore</button>
+            </div>
+        </div>
+        <div class="main-div">
+            <div class="first-div">
+                <img src="images/assets/KATHMANDU.jpg">
+            </div>
+            <div class="second-div">
+                <h4>Bsc (Hons) Computing</h4>
+                <p>The uptake of digital technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button>Explore</button>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+
+</html>

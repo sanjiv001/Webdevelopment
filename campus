@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+
+        .box {
+            width: 300px;
+            margin: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 8px 0px rgba(24, 22, 22, 0.5);
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            transition: all 0.5s ease;
+        }
+
+        .content {
+            padding: 20px;
+            line-height: 25px;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        .third-div {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        button {
+            margin: 10px;
+            padding: 5px;
+            background: blue;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .image {
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .image:hover img {
+            transform: scale(1.5);
+        }
+
+        /* 
+        h2 {
+            transition: 0.5s ease;
+        }
+        .content:hover h2 {
+            transform: scale(1.5);
+        } */
+
+        h2 {
+            overflow: hidden;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            justify-content: space-between;
+        }
+
+
+
+        .nav-logo img {
+            max-width: 40px;
+        }
+
+        #nav-bar ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 15px;
+
+        }
+
+        #nav-bar ul li {
+            padding: 0 2px;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Design</title>
+</head>
+
+<body>
+    <div id="nav-bar">
+        <ul class="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Testimonials</a></li>
+            <li><a href="#">Last</a></li>
+            <li><a href="#">Last</a></li>
+            <li><a href="#">Last</a></li>
+            <li><input type="search" placeholder="search..."></li>
+            <li><button>Submit</button></li>
+
+        </ul>
+    </div>
+    <div class="main">
+        <div class="box">
+            <div class="image">
+                <img src="images/assets/KATHMANDU.jpg" />
+            </div>
+            <div class="content">
+                <h2>Bsc (Hons) Computing</h2>
+                <p>The uptake of digital &nbsp; technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button type="button">Explore &gt; </button>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/assets/KATHMANDU.jpg" />
+            </div>
+            <div class="content">
+                <h2>Bsc (Hons) Ethical Hacking</h2>
+                <p>The uptake of digital &nbsp; technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button type="button">Explore &gt; </button>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/assets/KATHMANDU.jpg" />
+            </div>
+            <div class="content">
+                <h2>Bsc (Hons) Ethical Hacking</h2>
+                <p>The uptake of digital &nbsp; technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button type="button">Explore &gt; </button>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/assets/KATHMANDU.jpg" />
+            </div>
+            <div class="content">
+                <h2>Bsc (Hons) Ethical Hacking</h2>
+                <p>The uptake of digital &nbsp; technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button type="button">Explore &gt; </button>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/assets/KATHMANDU.jpg" />
+            </div>
+            <div class="content">
+                <h2>Bsc (Hons) Ethical Hacking</h2>
+                <p>The uptake of digital &nbsp; technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button type="button">Explore &gt; </button>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/assets/KATHMANDU.jpg" />
+            </div>
+            <div class="content">
+                <h2>Bsc (Hons) Ethical Hacking</h2>
+                <p>The uptake of digital &nbsp; technology in society has greatly increased our need for interactive
+                    computing...
+                </p>
+            </div>
+            <div class="third-div">
+                <button type="button">Explore &gt; </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
