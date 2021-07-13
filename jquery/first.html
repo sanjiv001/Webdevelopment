@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery First</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22"></script> -->
+
+    <style>
+        p {
+            height: 500px;
+            width: 500px;
+            background-color: orange;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">jquery Test</p>
+    <button class="btn">click me</button>
+    <script>
+        $(".btn").click(function(){
+            $("#p1").hide()
+
+        })
+        
+    </script>
+
+    <Script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $("#p1").slideup(5000)
+            })
+        })
+
+    </Script>
+</body>
+</html>
