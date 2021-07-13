@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function validateform(){
+            let fname=document.getElementById("firstname");
+            let lname=document.getElementById("lastname");
+            let phone=document.getElementById("phone");
+            let email=document.getElementById("email");
+            let Password=document.getElementById("password");
+
+            let letters = /^[A-Za-z]+$/;
+            let numbers = /^[0-9]+$/;
+            let alphanumeric = /^[0-9a-zA-Z]+$/;
+            let email_pattern = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,5})$/;
+            let phone_pattern = /^\b\d{3}[-.]?\d{3}[-.]?\d{4}\b$/;
+            let password_pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+
+            if (fname.value.match(letters)){
+                alert("First name only contain alphabets")
+                fname.focus()
+                return false;
+
+                if (lname.value.match(letters)){
+                alert("First name only contain alphabets")
+                fname.focus()
+                return false;
+                
+                if (phone.value.match(phone_pattern)){
+                alert("First name only contain alphabets")
+                fname.focus()
+                return false;
+
+                if (email.value.match(email_pattern)){
+                alert("First name only contain alphabets")
+                fname.focus()
+                return false;
+
+                if (Password.value.match(password_pattern)){
+                alert("First name only contain alphabets")
+                fname.focus()
+                return false;
+            }
+            return true;
+
+
+            // if (fname.value==""){
+            // alert("first name cannot be empty");
+            // lname:focus();
+            // return false;        
+            // }
+
+            // if (lname.value==""){
+            // alert("first name cannot be empty");
+            // lname:focus();
+            // return false;        
+            // }
+
+            // if (phone.value==""){
+            // alert("phone must be number");
+            // lname:focus();
+            // return false; 
+            
+            
+            // }
+            // if (email.value==""){
+            // alert("first name cannot be empty");
+            // lname:focus();
+            // return false;        
+            // }
+
+            // if (Password.value==""){
+            // alert("password name cannot be empty");
+            // lname:focus();
+            // return false;        
+            // }
+        }
+    </script>
+</head>
+<body>
+    
+    <form action="" method="" onsubmit="return validateform()">
+        <input type="text" name="firstname" id="firstname" placeholder="Enter the first name"><br/><br/>
+        <input type="text" name="lastname" id="firstname" placeholder="Enter the last name"><br/><br/>
+        <input type="text" name="phone" id="firstname" placeholder="Enter the first name"><br/><br/>
+        <input type="text" name="email" id="firstname" placeholder="Enter the first name"><br/><br/>
+        <input type="text" name="password" id="firstname" placeholder="Enter the number"><br/><br/>
+        <input type="submit" value="submit">
+        
+</body>
+</html>

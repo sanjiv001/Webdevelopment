@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+   <div id="democlick">This is initial text from html</div>
+   
+   <button type='button'onclick="">click event</button> 
+
+   <div id="demodbclick">This is initial text from html</div>
+   
+   <button type='button'onclick="">click event</button> 
+   <br/>
+   <br/>
+   input type='Text' onkeyup="keyupEvent()">
+   <br/>
+
+   <h1 onmouseenter="">Hello</h1>
+    <script>
+        function onchangeEvent(userinput){
+            alert("You entered:"+ userinput)
+            
+        }
+
+        function clickEvent(){
+            document.getElementById("democlick").innerHTML="This is text from javascript"
+        }
+        function dbclick(){
+            document.getElementById("demodbclick").innerHTML="tyurj"
+        }
+        function keyupEvent(){
+            alert("Keyup event triggered")
+        }
+    </script>
+
+</body>
+
+</html>bu
